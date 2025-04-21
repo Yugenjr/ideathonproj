@@ -33,13 +33,23 @@
     header .logo {
       font-size: 28px;
       color: #00bfff;
-      animation: pulse 1.5s infinite;
+
+  top: 20px;
+  left: 20px;
+  width: 60px;
+  height: auto;
+  max-height: 60px;
+  z-index: 1000;
+
+      animation: pulse 3s infinite;
     }
 
     header h1 {
       font-size: 24px;
       color: #00bfff;
     }
+ 
+
 
     .container {
       height: 100vh;
@@ -136,7 +146,8 @@
 </head>
 <body>
   <header>
-    <div class="logo">📝</div>
+    <div class="logo"><img src="logo.png" class="logo" alt="QuickNotes Logo" />
+    </div>
     <h1>QuickNotes</h1>
   </header>
 
@@ -152,4 +163,3 @@
   <div class="wave"></div>
 </body>
 </html>
-
