@@ -1,1 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuickNotes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #000000, #000a3e);
+      color: white;
+      min-height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    header {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    header .logo {
+      font-size: 28px;
+      color: #00bfff;
+      animation: pulse 1.5s infinite;
+    }
+
+    header h1 {
+      font-size: 24px;
+      color: #00bfff;
+    }
+
+    .container {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h2 {
+      font-size: 48px;
+      color: #00bfff;
+      margin-bottom: 20px;
+      animation: slideDown 1s ease forwards;
+    }
+
+    p {
+      font-size: 20px;
+      color: #ccc;
+      max-width: 600px;
+      margin-bottom: 30px;
+      animation: fadeIn 2s ease forwards;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 20px;
+      animation: fadeIn 3s ease forwards;
+    }
+
+    .buttons a {
+      padding: 12px 30px;
+      border-radius: 10px;
+      font-size: 18px;
+      text-decoration: none;
+      transition: 0.3s;
+      box-shadow: 0 0 10px rgba(0, 191, 255, 0.5);
+    }
+
+    .login {
+      background: #00bfff;
+      color: #000;
+    }
+
+    .login:hover {
+      background: #008ecc;
+    }
+
+    .signup {
+      border: 2px solid #00bfff;
+      color: #00bfff;
+      background: transparent;
+    }
+
+    .signup:hover {
+      background: #00bfff;
+      color: #000;
+    }
+
+    .wave {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background: url('https://svgshare.com/i/ubk.svg');
+      background-size: cover;
+      animation: waveMove 10s linear infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 0.8; }
+      50% { transform: scale(1.1); opacity: 1; }
+      100% { transform: scale(1); opacity: 0.8; }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes waveMove {
+      0% { background-position-x: 0; }
+      100% { background-position-x: 1000px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">📝</div>
+    <h1>QuickNotes</h1>
+  </header>
+
+  <div class="container">
+    <h2>Take Notes, Fast & Secure</h2>
+    <p>QuickNotes is your futuristic notepad with seamless access, secure storage, and lightning-fast interaction.</p>
+    <div class="buttons">
+      <a href="#" class="login">Login</a>
+      <a href="#" class="signup">Sign Up</a>
+    </div>
+  </div>
+
+  <div class="wave"></div>
+</body>
+</html>
 
